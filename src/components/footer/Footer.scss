@@ -1,0 +1,27 @@
+footer {
+  background: #000000;
+  padding: 30px 25px;
+  display: flex;
+  color: #ffffff;
+
+  .logo {
+    width: 88px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-left: 25px;
+    .title {
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .menu-item {
+      cursor: pointer;
+      margin: 8px 0;
+    }
+  }
+}
