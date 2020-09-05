@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.scss';
-import { Header } from "./components/header/Header";
-import { Footer } from "./components/footer/Footer";
+import { Footer } from "./components/Footer";
+import { ContentGrid } from './components/ContentGrid';
+import HeaderWrapper from './containers/HeaderWrapper';
 
 const App = () => {
   return (
     <>
-      <Header/>
-      <div className="main">Main content here</div>
+      <HeaderWrapper/>
+      <ContentGrid/>
       <Footer/>
     </>
   );

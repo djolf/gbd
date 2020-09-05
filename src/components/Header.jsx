@@ -1,41 +1,39 @@
 import React from "react";
 import "./Header.scss";
-import logo from "../../assets/logo.svg";
-import { useState } from "react";
+import logo from "../assets/logo.svg";
 
 const menu = {
   left: [
     {
       label: "Home",
-      url: "#",
+      url: "/",
     },
     {
       label: "RPG",
-      url: "#",
+      url: "/rpg",
     },
     {
       label: "Arcade",
-      url: "#",
+      url: "/arcade",
     },
     {
       label: "Brain Games",
-      url: "#",
+      url: "/brain-games",
     },
   ],
   right: [
     {
       label: "Support",
-      url: "#",
+      url: "/support",
     },
     {
       label: "Contact Us",
-      url: "#",
+      url: "/contact-us",
     },
   ],
 };
 
-export const Header = () => {
-  const [active, setActive] = useState(false);
+export const Header = ({open, toggleMenu}) => {
   return (
     <header>
       <div className="logo">
@@ -49,28 +47,24 @@ export const Header = () => {
         <div className="menu">
           {menu && menu.left && (
             <ul className="menu-left">
-              {menu.left.map((item) => (
-                <li onClick={() => window.location.href = item.url}>
-                  {item.label}
-                </li>
+              {menu.left.map((item, i) => (
+                <MenuItem key={i} item={item}/>
               ))}
             </ul>
           )}
           {menu && menu.right && (
             <ul className="menu-right">
-              {menu.right.map((item) => (
-                <li onClick={() => window.location.href = item.url}>
-                  {item.label}
-                </li>
+              {menu.right.map((item, i) => (
+                <MenuItem key={i} item={item}/>
               ))}
             </ul>
           )}
         </div>
       </div>
-      <div class={`mobileMenuIcon${active ? ' active':''}`} onClick={() => setActive(!active)}>
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div className={`mobileMenuIcon${open.toggleMenu ? ' active':''}`} onClick={() => toggleMenu(!open.toggleMenu)}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
       <div className="menu-mobile">
         <div className="mobile-btns">
@@ -78,18 +72,22 @@ export const Header = () => {
           <div className="btn btn-cta">Sign Up</div>
         </div>
         <ul className="mobileMenu">
-          {menu && menu.left.map(item => (
-            <li onClick={() => window.location.href = item.url}>
-              {item.label}
-            </li>
+          {menu && menu.left.map((item, i) => (
+            <MenuItem key={i} item={item}/>
           ))}
-          {menu && menu.right.map(item => (
-            <li onClick={() => window.location.href = item.url}>
-              {item.label}
-            </li>
+          {menu && menu.right.map((item, i) => (
+            <MenuItem key={i} item={item}/>
           ))}
         </ul>
       </div>
     </header>
   );
 };
+
+const MenuItem = props => {
+  return (
+    <li onClick={() => window.location.href = props.item.url}>
+      {props.item.label}
+    </li>
+  )
+}

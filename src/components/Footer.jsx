@@ -1,38 +1,38 @@
 import React from "react";
 import "./Footer.scss";
-import logo from "../../assets/logo.svg";
+import logo from "../assets/logo.svg";
 
 const menu = {
   contact: [
     {
       label: "Help Centre",
-      url: "#"
+      url: "/help"
     },
     {
       label: "The Group",
-      url: "#"
+      url: "/group"
     },
     {
       label: "Affiliates",
-      url: "#"
+      url: "/affiliates"
     },
   ],
   information: [
     {
       label: "Terms & Conditions",
-      url: "#"
+      url: "/terms-and-conditions"
     },
     {
       label: "Payment methods",
-      url: "#"
+      url: "/payment-methods"
     },
     {
       label: "Bonus Terms",
-      url: "#"
+      url: "/bonus-terms"
     },
     {
       label: "Responsible Gaming",
-      url: "#"
+      url: "/responsible-gaming"
     },
   ]
 }
@@ -45,14 +45,14 @@ export const Footer = () => {
       </div>
       <div className="footer-nav">
         <div className="title">Contact Us</div>
-        {menu && menu.contact.map(item => (
-          <span className="menu-item" onClick={() => window.location.href = item.url}>{item.label}</span>
+        {menu && menu.contact.map((item, i) => (
+          <span key={i} className="menu-item" onClick={() => window.location.href = item.url}>{item.label}</span>
         ))}
       </div>
       <div className="footer-nav">
         <div className="title">Information</div>
-        {menu && menu.information.map(item => (
-          <span className="menu-item" onClick={() => window.location.href = item.url}>{item.label}</span>
+        {menu && menu.information.map((item, i) => (
+          <span key={i} className="menu-item" onClick={() => window.location.href = item.url}>{item.label}</span>
         ))}
       </div>
     </footer>

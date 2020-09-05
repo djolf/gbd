@@ -3,6 +3,7 @@ footer {
   padding: 30px 25px;
   display: flex;
   color: #ffffff;
+  // width: 100%;
 
   .logo {
     width: 88px;
@@ -22,6 +23,9 @@ footer {
     .menu-item {
       cursor: pointer;
       margin: 8px 0;
+      &:hover {
+        color: #eeeeee;
+      }
     }
   }
 }

@@ -1,15 +1,19 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import store from './app/store';
 import App from './App';
+import renderer from 'react-test-renderer';
+import rootReducer from "./reducers";
+import { createStore } from "redux";
 
-test('renders learn react link', () => {
-  const { getByText } = render(
-    <Provider store={store}>
-      <App />
-    </Provider>
-  );
+const store = createStore(rootReducer);
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
+it('renders correctly', () => {
+  const tree = renderer
+    .create(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });

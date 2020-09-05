@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <header>
+    <div
+      className="logo"
+    >
+      <img
+        alt=""
+        src="logo.svg"
+      />
+    </div>
+    <div
+      className="menu-desktop"
+    >
+      <div
+        className="login-btns"
+      >
+        <div
+          className="btn"
+        >
+          Login
+        </div>
+        <div
+          className="btn btn-cta"
+        >
+          Sign Up
+        </div>
+      </div>
+      <div
+        className="menu"
+      >
+        <ul
+          className="menu-left"
+        >
+          <li
+            onClick={[Function]}
+          >
+            Home
+          </li>
+          <li
+            onClick={[Function]}
+          >
+            RPG
+          </li>
+          <li
+            onClick={[Function]}
+          >
+            Arcade
+          </li>
+          <li
+            onClick={[Function]}
+          >
+            Brain Games
+          </li>
+        </ul>
+        <ul
+          className="menu-right"
+        >
+          <li
+            onClick={[Function]}
+          >
+            Support
+          </li>
+          <li
+            onClick={[Function]}
+          >
+            Contact Us
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="mobileMenuIcon"
+      onClick={[Function]}
+    >
+      <div
+        className="line1"
+      />
+      <div
+        className="line2"
+      />
+      <div
+        className="line3"
+      />
+    </div>
+    <div
+      className="menu-mobile"
+    >
+      <div
+        className="mobile-btns"
+      >
+        <div
+          className="btn"
+        >
+          Login
+        </div>
+        <div
+          className="btn btn-cta"
+        >
+          Sign Up
+        </div>
+      </div>
+      <ul
+        className="mobileMenu"
+      >
+        <li
+          onClick={[Function]}
+        >
+          Home
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          RPG
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          Arcade
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          Brain Games
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          Support
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          Contact Us
+        </li>
+      </ul>
+    </div>
+  </header>,
+  <div
+    className="content-grid"
+  >
+    <div
+      className="tile item-1"
+    >
+      <img
+        alt=""
+        src="Rectangle-4.png"
+      />
+      <div
+        className="tile-info"
+      >
+        <div
+          className="title"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<h1 class=\\"text-left\\">PLAY<br>WIN<br>EXCITE</h1>",
+            }
+          }
+        />
+        <div
+          className="titleMobile"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<h1 class=\\"text-left\\">PLAY<br>WIN<br>EXCITE</h1>",
+            }
+          }
+        />
+        <div
+          className="btn btn-cta"
+          onClick={[Function]}
+        >
+          Get Started!
+        </div>
+      </div>
+    </div>
+    <div
+      className="tile item-2"
+    >
+      <img
+        alt=""
+        src="Mask-group.png"
+      />
+    </div>
+    <div
+      className="tile item-3"
+    >
+      <img
+        alt=""
+        src="Mask-group-2.png"
+      />
+    </div>
+    <div
+      className="tile item-4"
+    >
+      <img
+        alt=""
+        src="Mask-group-3.png"
+      />
+    </div>
+    <div
+      className="tile item-5"
+    >
+      <img
+        alt=""
+        src="Mask-group-4.png"
+      />
+    </div>
+    <div
+      className="tile item-6"
+    >
+      <img
+        alt=""
+        src="Mask-group-5.png"
+      />
+      <div
+        className="tile-info title-bg"
+      >
+        <div
+          className="title"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "LIVE GAMES<br>WITH FRIENDS",
+            }
+          }
+        />
+        <div
+          className="titleMobile"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "LIVE GAMES",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="tile item-7"
+    >
+      <img
+        alt=""
+        src="Mask-group-6.png"
+      />
+    </div>
+    <div
+      className="tile item-8"
+    >
+      <img
+        alt=""
+        src="Mask-group-7.png"
+      />
+    </div>
+    <div
+      className="tile item-9"
+    >
+      <img
+        alt=""
+        src="Mask-group-8.png"
+      />
+    </div>
+    <div
+      className="tile item-10"
+    >
+      <img
+        alt=""
+        src="Mask-group-9.png"
+      />
+    </div>
+    <div
+      className="tile item-11"
+    >
+      <img
+        alt=""
+        src="Mask-group-10.png"
+      />
+      <div
+        className="tile-info title-bg"
+      >
+        <div
+          className="title"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "LOVE PLAYING?<br>JOIN THE LEAGUE",
+            }
+          }
+        />
+        <div
+          className="titleMobile"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "LOVE PLAYING?<br>JOIN THE LEAGUE",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>,
+  <footer>
+    <div
+      className="logo"
+    >
+      <img
+        alt="logo"
+        src="logo.svg"
+      />
+    </div>
+    <div
+      className="footer-nav"
+    >
+      <div
+        className="title"
+      >
+        Contact Us
+      </div>
+      <span
+        className="menu-item"
+        onClick={[Function]}
+      >
+        Help Centre
+      </span>
+      <span
+        className="menu-item"
+        onClick={[Function]}
+      >
+        The Group
+      </span>
+      <span
+        className="menu-item"
+        onClick={[Function]}
+      >
+        Affiliates
+      </span>
+    </div>
+    <div
+      className="footer-nav"
+    >
+      <div
+        className="title"
+      >
+        Information
+      </div>
+      <span
+        className="menu-item"
+        onClick={[Function]}
+      >
+        Terms & Conditions
+      </span>
+      <span
+        className="menu-item"
+        onClick={[Function]}
+      >
+        Payment methods
+      </span>
+      <span
+        className="menu-item"
+        onClick={[Function]}
+      >
+        Bonus Terms
+      </span>
+      <span
+        className="menu-item"
+        onClick={[Function]}
+      >
+        Responsible Gaming
+      </span>
+    </div>
+  </footer>,
+]
+`;
